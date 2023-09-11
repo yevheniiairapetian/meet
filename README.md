@@ -1,4 +1,5 @@
 # Meet App
+The Meet App helps the users to find events held in a city of the user's choice. The users will be able to choose a city, number of events, and see a visualized graph of the events. The app can also be used offline.
 
 ### Key Features:
 - Filter Events by City.
