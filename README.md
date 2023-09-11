@@ -64,6 +64,8 @@ _Given_ user has installed the application;
 _When_ the user uses the app on the respective device;
 _Then_ they should be able to add a app shortcut to the main screen.
 
+### The app is live here: https://yevheniiairapetian.github.io/meet/
+
 ### SCENARIO 7
 User can display charts visualizing event details
 
