@@ -64,11 +64,11 @@ _Given_ user has installed the application;
 _When_ the user uses the app on the respective device;
 _Then_ they should be able to add a app shortcut to the main screen.
 
-### The app is live here: https://yevheniiairapetian.github.io/meet/
-
 ### SCENARIO 7
 User can display charts visualizing event details
 
 _Given_ user has selected the city from the suggested list of cities;
 _When_ the main page is open;
 _Then_ they should be able to see the visualized charts of the upcoming events in the city.
+
+### The app is live here: https://yevheniiairapetian.github.io/meet/
