@@ -1,6 +1,7 @@
 # Meet App
 The Meet App helps the users to find events held in a city of the user's choice. The users will be able to choose a city, number of events, and see a visualized graph of the events. The app can also be used offline.
-
+### The Use of Serverless
+The app will make use of the serverless techology to fetch data from the Google Calendar API and display events for the authenticated/authorized users (with the help of the OAuth2 framework). As well it will display notifications, process data in real time, recommend events and can scale on demand. 
 ### Key Features:
 - Filter Events by City.
 - Show/Hide Event Details.
