@@ -11,7 +11,6 @@ const redirect_uris = [
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
   CLIENT_SECRET,
-  CALENDAR_ID,
   redirect_uris[0]
 );
 
