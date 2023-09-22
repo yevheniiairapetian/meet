@@ -1,7 +1,4 @@
 const NumberOfEvents = () => {
-    const handleInputChanged = (event) => {
-      
-    };
   
     return (
       <div id="number-of-events">
