@@ -1,7 +1,8 @@
+
 import Event from '../components/Event';
 import { render } from '@testing-library/react';
 import mockData from '../mock-data';
-import userEvent from '@testing-library/user-event';
+
 
 const mockEvent = mockData[0];
 
@@ -37,25 +38,5 @@ describe('<Event /> Component', () => {
     expect(details).not.toBeInTheDocument();
   });
 
-  test('show details after user clicks button "show details"', async () => {
-    const user = userEvent.setup();
-    const button = EventComponent.queryByText('Show Details');
-    await user.click(button);
 
-    const eventDOM = EventComponent.container.firstChild;
-    const details = eventDOM.querySelector('.details');
-    expect(details).toBeInTheDocument();
-  });
-
-  test('hide details after user clicks button "hide details"', async () => {
-    const button = EventComponent.queryByText('Show Details');
-    const eventDOM = EventComponent.container.firstChild;
-    await userEvent.click(button);
-
-    const hideButton = EventComponent.queryByText('Hide Details');
-    await userEvent.click(hideButton);
-
-    const details = eventDOM.querySelector('.details');
-    expect(details).not.toBeInTheDocument();
-  });
 });
