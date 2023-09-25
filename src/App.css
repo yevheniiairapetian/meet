@@ -155,4 +155,7 @@ input[type="number"]{
     width:90%;
     margin: 0 auto;
   }
+  input[type="text"]{
+    margin-bottom: 8px;
+  }
 }
