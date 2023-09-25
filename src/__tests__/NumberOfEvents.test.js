@@ -6,7 +6,7 @@ describe('<NumberOfEvents /> Component', () => {
   let NumberOfEventsComponent;
   beforeEach(() => {
     NumberOfEventsComponent = render(
-      <NumberOfEvents />
+      <NumberOfEvents setCurrentNOE={() => {}}/>
     );
   });
 
@@ -26,3 +26,4 @@ describe('<NumberOfEvents /> Component', () => {
     expect(input).toHaveValue('10');
   });
 });
+
