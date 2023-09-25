@@ -8,6 +8,7 @@ const NumberOfEvents = ({setCurrentNOE}) => {
         <input
           type="text"
           defaultValue="32"
+          placeholder="Enter number of events"
           onChange={handleInputChanged}
         />
       </div>
