@@ -144,3 +144,15 @@ padding:10px 5px 10px 5px;
   outline: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 650px){
+  #event-list{
+    width: 100%;
+    margin: 0 auto;
+  } 
+  input[type="text"],
+input[type="number"]{
+    width:90%;
+    margin: 0 auto;
+  }
+}
