@@ -108,6 +108,7 @@ input::placeholder{
 
 #event-list li button{
   color: black;
+  font-size: 14px;
   width: 100%;
   padding: 15px 10px;
   background-color:yellow;
