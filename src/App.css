@@ -2,6 +2,7 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  background-image: url('../src/images/background.jpg');
 }
 
 .App * {
@@ -23,7 +24,7 @@ input[type="number"] {
   width:250px;
   border-radius: 4px;
   outline: none;
-  background-color:#6699ff;
+  background-color:#7FB5B5;
   color: white;
   border: 1px solid #ccc;
   font-size: 14px;
@@ -87,7 +88,7 @@ input::placeholder{
 }
 .event {
   padding: 10px 10px 35px;
-  margin-bottom: 36px;
+  margin-bottom: 54px;
   text-align: left;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -102,8 +103,15 @@ input::placeholder{
 #event-list li h3{
   color: white;
   padding: 15px 10px;
-  background-color:#333333;
+  background-color:#88BCBD;
   margin-bottom:0;
+}
+
+#event-list li h4{
+  color: white;
+  background-color:#848484;
+  padding: 20px 5px 20px 5px;
+  margin:0;
 }
 
 #event-list li button{
@@ -111,28 +119,28 @@ input::placeholder{
   font-size: 14px;
   width: 100%;
   padding: 15px 10px;
-  background-color:yellow;
+  background-color:#A6C0AF;
   margin-bottom:-36px;
 }
 
 #event-list li button:hover{
   padding: 15px 10px;
-  background-color:yellow;
   opacity:0.8;
 }
 
 #event-list li p:first-of-type{
 color: black;
-background-color:#ffff99;
+background-color:#E1DBC3;
 margin-top: 0;
 margin-bottom: 0;
 padding:10px 5px 10px 5px;
 }
 
 #event-list li p:last-of-type{
-  color: white;
-  background-color:#6699ff;
+  color: black;
+  background-color:#B6D4E1;
   margin-top: 0;
+  margin-bottom:0;
   padding:10px 5px 10px 5px;
   }
 .details-btn {
