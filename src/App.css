@@ -138,6 +138,8 @@ padding:10px 5px 10px 5px;
 .details-btn {
   position: absolute;
   bottom: 5px;
+  left:0;
+  right:0;
   padding: 10px 14px;
   border-radius: 4px;
   outline: none;
