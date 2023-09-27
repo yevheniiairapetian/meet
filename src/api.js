@@ -1,7 +1,7 @@
 // src/api.js
 
 import mockData from './mock-data';
-
+import NProgress from 'nprogress';
 /**
  *
  * @param {*} events:
@@ -57,8 +57,10 @@ const getToken = async (code) => {
 };
 
 export const getEvents = async () => {
+  NProgress.start();
   if (window.location.href.startsWith('http://localhost')) {
-    return mockData;
+    NProgress.done();  
+  return mockData;
   }
   const token = await getAccessToken();
 
