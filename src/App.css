@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 .App {
+  min-height: 100vh;
   text-align: center;
   padding: 2% 5%;
   background-image: url('../src/images/background.jpg');
@@ -7,6 +8,15 @@
 
 .App * {
   box-sizing: border-box;
+}
+ 
+html, body {
+  min-height: 100vh;
+  padding: 0;
+}
+
+#root{
+  height: 100%;
 }
 
 ul {
