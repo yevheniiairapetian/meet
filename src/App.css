@@ -164,6 +164,14 @@ padding:10px 5px 10px 5px;
   cursor: pointer;
 }
 
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 650px){
   #event-list{
     width: 100%;

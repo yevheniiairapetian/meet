@@ -1,6 +1,6 @@
 // src/components/CitySearch.js
 import { useState, useEffect } from "react";
-const CitySearch = ({allLocations, setCurrentCity}) => {
+const CitySearch = ({allLocations, setCurrentCity, setInfoAlert}) => {
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [suggestions, setSuggestions] = useState([]);
     const [query, setQuery] = useState("");
@@ -16,6 +16,15 @@ const CitySearch = ({allLocations, setCurrentCity}) => {
 
         setQuery(value);
         setSuggestions(filteredLocations);
+
+        let infoText;
+    if (filteredLocations.length === 0) {
+      infoText = "We can not find the city you are looking for. Please try another city"
+    } else {
+      infoText = ""
+    }
+    setInfoAlert(infoText);
+    
     };
 
     const handleItemClicked = (event) => {
@@ -23,6 +32,7 @@ const CitySearch = ({allLocations, setCurrentCity}) => {
         setQuery(value);
         setShowSuggestions(false); // to hide the list
         setCurrentCity(value);
+        setInfoAlert(""); //shows no info alert when clicked
       };
     return (
         <div id="city-search">
