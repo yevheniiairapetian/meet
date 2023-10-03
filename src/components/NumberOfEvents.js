@@ -4,8 +4,8 @@ const NumberOfEvents = ({setCurrentNOE, setErrorAlert}) => {
     setCurrentNOE(value);
 
     let errorText;
-    if (isNaN(value) || value <= 0) {
-      errorText = 'Please enter a valid number greater than 0.';
+    if (isNaN(value) || value <= 0 || value > 32) {
+      errorText = 'Please enter a valid number greater than 0 and less than 33.';
       setErrorAlert(errorText);
       setCurrentNOE(0);
     } else {
