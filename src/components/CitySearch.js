@@ -36,14 +36,16 @@ const CitySearch = ({allLocations, setCurrentCity, setInfoAlert}) => {
       };
     return (
         <div id="city-search">
+        <label htmlFor="city-search-input">City Search<br/>
             <input
+            id="city-search-input"
                 type="text"
                 className="city"
                 placeholder="Search for a city"
                 onFocus={() => setShowSuggestions(true)}
                 value={query}
                 onChange={handleInputChanged} />
-
+                </label>
             {showSuggestions ? <ul className="suggestions">{suggestions.map((suggestion) => {
                 return <li key={suggestion} onClick={handleItemClicked}>{suggestion}</li>
             })}

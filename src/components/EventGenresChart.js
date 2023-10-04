@@ -2,14 +2,6 @@ import React, { PureComponent } from 'react';
 import { useState, useEffect } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
-const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-];
-
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -27,6 +19,12 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 const EventGenresChart = ({ events }) => {
 
     const [data, setData] = useState([]);
+  const genres = ["React", "JavaScript", "Node", "jQuery", "Angular"];
+  const colors = ["#E1DBC3", "#B6D4E1", "#6699ff", "#88BCBD", "#848484"];
+
+  useEffect(() => {
+    setData(getData());
+  }, [`${events}`]);
 
     const getData = () => {
         const genres = ["React", "JavaScript", "Node", "jQuery", "AngularJS"];
@@ -38,11 +36,6 @@ const EventGenresChart = ({ events }) => {
         });
         return data;
       };
-
-    useEffect(() => {
-        setData(getData());
-      }, [`${events}`]);
-
       const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, index }) => {
         const RADIAN = Math.PI / 180;
         const radius = outerRadius;
@@ -60,19 +53,21 @@ const EventGenresChart = ({ events }) => {
           </text>
         ) : null;
       };
-
-    const genres = ['React', 'JavaScript', 'Node', 'jQuery', 'Angular'];
+    
       return (
    <ResponsiveContainer width="99%" height={400}>
      <PieChart>
        <Pie
          data={data}
          dataKey="value"
-         fill="#6699ff"
          labelLine={false}
          label={renderCustomizedLabel}
          outerRadius={130}           
-       />
+       >
+        {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+          ))}
+          </Pie>
      </PieChart>
    </ResponsiveContainer>
  );

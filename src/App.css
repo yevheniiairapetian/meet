@@ -15,6 +15,10 @@ html, body {
   padding: 0;
 }
 
+h1{
+  color:#6699ff;
+}
+
 #root{
   height: 100%;
 }
@@ -42,11 +46,13 @@ input[type="number"] {
   align-self: center;
   height: 38px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 input::placeholder{
   color:white;
 }
+
 .city {
   width: 250px;
   background-color:#6699ff;
@@ -176,13 +182,24 @@ padding:10px 5px 10px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-@media screen and (max-width: 650px){
-
+@media screen and (max-width: 780px){
   .charts-container{
     grid-template-columns: 1fr;
   }
+  input[type="text"],
+  input[type="number"] {
+    margin-top: 10px;
+}
+}
+@media screen and (max-width: 650px){
 
+  
+  #city-search input[type="text"]{
+    margin-top: 10px;
+  }
+  #number-of-events input[type="text"] {
+    margin-top: 10px;
+  }
   #event-list{
     width: 100%;
     margin: 0 auto;
