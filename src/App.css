@@ -172,7 +172,17 @@ padding:10px 5px 10px 5px;
   z-index: 1000;
 }
 
+.charts-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 650px){
+
+  .charts-container{
+    grid-template-columns: 1fr;
+  }
+
   #event-list{
     width: 100%;
     margin: 0 auto;
