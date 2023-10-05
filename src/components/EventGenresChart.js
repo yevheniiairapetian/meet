@@ -42,7 +42,7 @@ const EventGenresChart = ({ events }) => {
         const x = cx + radius * Math.cos(-midAngle * RADIAN) * 1.07;
         const y = cy + radius * Math.sin(-midAngle * RADIAN) * 1.07;
         return percent ? (
-          <text
+          <text class="pie-text"
             x={x}
             y={y}
             fill="#8884d8"

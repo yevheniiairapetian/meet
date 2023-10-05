@@ -189,6 +189,9 @@ padding:10px 5px 10px 5px;
   .genres-chart{
     width:90%;
   }
+  .pie-text{
+    font-size: 10px;
+  }
   input[type="text"],
   input[type="number"] {
     margin-top: 10px;
@@ -200,6 +203,9 @@ padding:10px 5px 10px 5px;
     width:90%;
   }
   
+  .pie-text{
+    font-size: 10px;
+  }
   #city-search input[type="text"]{
     margin-top: 10px;
   }
