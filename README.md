@@ -74,3 +74,11 @@ _When_ the main page is open;
 _Then_ they should be able to see the visualized charts of the upcoming events in the city.
 
 ### The app is live here: https://yevheniiairapetian.github.io/meet/
+
+## Clone and Preview
+To clone the app use the following command: `console git clone git@github.com:yevheniiairapetian/meet.git` Or download directly by clicking on <> Code button > Download ZIP. Install the required dependencies using the `npm install command`. Then run the app using the terminal command ```npm run start``` at ```localhost://3000``` 
+
+## Contact:
+Feel free to contact me via[ LinkedIn](https://www.linkedin.com/in/yevhenii-airapetian/) or  
+[email](mailto:sonkozhenia11@gmail.com) or 
+via the contact information on the [website](https://yevheniiairapetian.github.io/portfolio-website/contact.html) 
