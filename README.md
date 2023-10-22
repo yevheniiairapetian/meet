@@ -17,6 +17,7 @@ The app makes use of serverless technology to fetch data from the Career Foundry
 <a href="https://ibb.co/xfB2HKk"><img src="https://i.ibb.co/SdM6rDj/2023-10-04-19h37-48.png" alt="2023-10-04-19h37-48" border="0"></a>   
 ## Project In Use Preview
 _Please click on the video below to watch it_   
+
 [![Watch the video](https://i.ibb.co/SdM6rDj/2023-10-04-19h37-48.png)](https://streamable.com/8sxcyd)
 
 ### Technologies Used:
