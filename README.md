@@ -111,6 +111,6 @@ _Then_ they should be able to see the visualized charts of the upcoming events i
 To clone the app, use the command `console git clone git@github.com:yevheniiairapetian/meet.git` Or download directly by clicking on <> Code button > Download ZIP. Navigate to the ```meet``` folder with ```cd meet``` in the terminal, and install the required dependencies using the `npm install command`. Then run the app using the terminal command ```npm start``` and navigate to ```localhost:3000/meet``` in the browser 
 
 ### Contact:
-Feel free to contact me via[ LinkedIn](https://www.linkedin.com/in/yevhenii-airapetian/) or  
+Feel free to contact me via[ LinkedIn](https://www.linkedin.com/in/yevheniiairapetian/) or  
 [email](mailto:contact@yevheniiairapetian.com) or 
 via the contact information on the [website](https://yevheniiairapetian.github.io/portfolio-website/contact.html) 
